@@ -5,6 +5,7 @@ import java.util.Set;
 
 public class ConjuntoNaoOrdenadoSeT {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		HashSet conjunto = new HashSet();
 		
@@ -17,7 +18,8 @@ public class ConjuntoNaoOrdenadoSeT {
 		//Colecões não suportam tipos primitivos
 		//por isso, eles são automaticamente convertidos
 		//para as wrapper class. Ex: int --> Integer
-		
+		//SET --> São conjuntos não ordenados
+		// 	  --> Não indexados e que não aceitam repetição
 		
 		System.out.println(conjunto.size()); 
 		//Size: ver o tamanho do conjunto
@@ -46,6 +48,7 @@ public class ConjuntoNaoOrdenadoSeT {
 		
 		conjunto.clear();
 		System.out.println(conjunto);
+		//apaga todos os dados
 	}
 
 }
